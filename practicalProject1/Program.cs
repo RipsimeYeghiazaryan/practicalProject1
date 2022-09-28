@@ -12,6 +12,8 @@ public class maxNumOfUnequalConsectutiveChar
                 longest += str[i];
             }
         }
+
+        Console.WriteLine("The unique characters are:  {0:0.##}\n", longest);
         return longest.Length;
     }
     static public void Main()
@@ -22,6 +24,6 @@ public class maxNumOfUnequalConsectutiveChar
         Console.Write("Type a sequence of symbols(string), and then press Enter: ");
         str = Console.ReadLine();
 
-        Console.WriteLine("The maximum number of unequal consecutive characters is {0:0.##}\n", MaximumChars(str));
+        Console.WriteLine("The maximum number of unequal consecutive characters is: {0:0.##}\n", MaximumChars(str));
     }
 }
